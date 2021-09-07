@@ -1,10 +1,17 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import "@fontsource/roboto";
+import { Link } from "gatsby";
+import { postLink } from "./index.module.css";
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Sami">
-      <p>This is my blog.</p>
+      <h2>Posts</h2>
+      <div className={postLink}>
+        <Link to="/posts/hi-im-sami">Hi! I'm Sami</Link>
+        <span>Sep 7, 2021</span>
+      </div>
     </Layout>
   );
 };
