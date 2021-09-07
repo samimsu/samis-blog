@@ -1,11 +1,11 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 700px;
   font-family: sans-serif;
 }
 
 .heading {
-  color: rebeccapurple;
+  color: rgb(32, 32, 32);
 }
 
 .nav-links {
@@ -19,5 +19,24 @@
 }
 
 .nav-link-text {
-  color: black;
+  color: rgb(32, 32, 32);
+}
+
+h2 {
+  padding-top: 1rem;
+}
+
+h4 {
+  color: rgb(91, 91, 91);
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: rgb(91, 91, 91);
+}
+
+article {
+  padding: 1rem 0;
 }
