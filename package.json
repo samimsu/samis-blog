@@ -17,7 +17,6 @@
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
     "gatsby": "^3.13.0",
-    "gatsby-plugin-favicons": "^2.0.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.13.0",
