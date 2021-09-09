@@ -25,6 +25,7 @@ const ParagraphsToHTML = () => {
 
   return (
     <Layout pageTitle="Paragraphs to HTML">
+      <p>A tool I use to convert my posts to HTML paragraphs</p>
       <textarea
         placeholder="Enter text here"
         style={textareaStyle}
