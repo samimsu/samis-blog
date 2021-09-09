@@ -9,6 +9,10 @@ const IndexPage = () => {
     <Layout pageTitle="Sami">
       <h2>Posts</h2>
       <div className={postLink}>
+        <Link to="/posts/content-creator">Content Creator</Link>
+        <span>Sep 9, 2021</span>
+      </div>
+      <div className={postLink}>
         <Link to="/posts/introvert">Introvert</Link>
         <span>Sep 8, 2021</span>
       </div>
