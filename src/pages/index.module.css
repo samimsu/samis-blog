@@ -1,10 +1,8 @@
 span {
   color: rgb(91, 91, 91);
-  /* padding: 1rem; */
-  /* font-size: 0.75rem; */
 }
 
-.post-link {
+.post-link-container {
   font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
@@ -12,7 +10,11 @@ span {
   border: 1px solid white;
 }
 
-.post-link:hover {
+.post-link-container:hover {
   background-color: lightgrey;
   border: 1px solid grey;
+}
+
+a:visited {
+  color: #0000ff;
 }
