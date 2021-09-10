@@ -4,6 +4,7 @@ import Posts from "../components/posts";
 import "@fontsource/roboto";
 
 const IndexPage = () => {
+  const [showEmail, setShowEmail] = React.useState(false);
   return (
     <Layout pageTitle="Sami">
       <p>
@@ -12,6 +13,14 @@ const IndexPage = () => {
         things. I have a{" "}
         <a href="https://samimsu.github.io">portfolio website</a> and{" "}
         <a href="https://codingforcasuals.com">coding blog</a> too.
+      </p>
+      <p>
+        You can reach out to me by email at:{" "}
+        <a onClick={() => setShowEmail(!showEmail)}>
+          <strong>
+            {showEmail ? "mohammadsamimsu@gmail.com" : "click to reveal"}
+          </strong>
+        </a>
       </p>
       <h2>Latest posts</h2>
       <Posts />
