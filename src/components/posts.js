@@ -6,6 +6,10 @@ const Posts = () => {
   return (
     <div>
       <div className={postLink}>
+        <Link to="/posts/advice">Advice</Link>
+        <span>Sep 10, 2021</span>
+      </div>
+      <div className={postLink}>
         <Link to="/posts/content-creator">Content Creator</Link>
         <span>Sep 9, 2021</span>
       </div>
