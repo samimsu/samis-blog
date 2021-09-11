@@ -23,7 +23,7 @@ const IndexPage = () => {
         </a>
       </p>
       <h2>Latest posts</h2>
-      <Posts />
+      <Posts count={5} />
     </Layout>
   );
 };
