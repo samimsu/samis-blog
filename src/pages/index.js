@@ -2,6 +2,8 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Posts from "../components/posts";
 import "@fontsource/roboto";
+import { Link } from "gatsby";
+import { latestPostsHeading } from "./index.module.css";
 
 const IndexPage = () => {
   const [showEmail, setShowEmail] = React.useState(false);
@@ -22,7 +24,10 @@ const IndexPage = () => {
           </strong>
         </a>
       </p>
-      <h2>Latest posts</h2>
+      <div className={latestPostsHeading}>
+        <h2>Latest posts</h2>
+        <Link to="/posts">View All</Link>
+      </div>
       <Posts count={5} />
     </Layout>
   );
