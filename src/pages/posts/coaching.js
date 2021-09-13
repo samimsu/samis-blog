@@ -11,8 +11,9 @@ const Coaching = () => {
           2 15 minute sessions with two different coaches. I've attended a few
           of these weekly meetups, and it always gives me a good boost. I hadn't
           attended in a while, so it was nice to get back to it. They're always
-          looking for more coaches and clients, so you could [sign up](link) if
-          you'd like.{" "}
+          looking for more coaches and clients, so you could{" "}
+          <a href="https://www.meetup.com/Speed-Coaching-Mondays/">sign up</a>{" "}
+          if you'd like.
         </p>
         <p>
           I talked about my job hunt with my coaches because getting a job is my
