@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 
 const IQuitYouTube = () => {
   return (
-    <Layout pageTitle="I Quit YouTube">
+    <Layout pageTitle="I quit YouTube">
       <h4>September 14, 2021</h4>
       <article>
         <p>
