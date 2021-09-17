@@ -62,7 +62,7 @@ const JobHunting = () => {
           the interview to redo the challenge and passed all the tests.
         </p>
         <p>
-          For the number of applications I"ve sent over the past few month, I
+          For the number of applications I"ve sent over the past few months, I
           haven't gotten very many interviews. I guess my profile wasn't strong
           enough to get to that stage. I also think that because of the sheer
           volume of applications, mine was simply missed.
