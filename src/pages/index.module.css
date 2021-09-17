@@ -15,7 +15,7 @@ span {
   border: 1px solid grey;
 }
 
-a:visited {
+.view-all-link:visited {
   color: #0000ff;
 }
 
