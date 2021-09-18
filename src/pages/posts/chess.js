@@ -28,7 +28,7 @@ const Chess = () => {
           now:
         </p>
         <StaticImage
-          src="../../assets/chess.com stats.png"
+          src="../../images/chess.com stats.png"
           alt="my chess.com stats"
         />
         <p>
