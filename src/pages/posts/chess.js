@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import stats from "../../assets/chess.com stats.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Chess = () => {
   return (
@@ -27,7 +27,10 @@ const Chess = () => {
           <a href="https://www.chess.com/member/sami7em">chess.com</a> as of
           now:
         </p>
-        <img src={stats} alt="my chess.com stats" />
+        <StaticImage
+          src="../../assets/chess.com stats.png"
+          alt="my chess.com stats"
+        />
         <p>
           That's 6500+ games. My puzzle rush rating isn't there, but my best is
           45 for puzzle rush survival mode. I've mostly played rapid, blitz, and
