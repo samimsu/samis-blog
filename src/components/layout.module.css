@@ -34,7 +34,7 @@ h4 {
   color: rgb(91, 91, 91);
 }
 
-p {
+p, li {
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
