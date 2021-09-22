@@ -22,7 +22,7 @@ const PrimarySchool = () => {
         <p>
           I have so many fond memories from the friends to the trips. There was
           a giant hill in the nursery which the kids would roll down. That was a
-          lot of fun. I remember feeling appreciated throughout my schools years
+          lot of fun. I remember feeling appreciated throughout my school years
           for the work I would do. It's such a great atmosphere to be in where
           you're rewarded and appreciated for your work. All those gold stars
           and stickers do wonders for a child's development.
