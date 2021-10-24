@@ -12,7 +12,7 @@ import {
 const IndexPage = () => {
   const [showEmail, setShowEmail] = React.useState(false);
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="Sami">
       <p>
         I am a software developer living in the UAE. I'm currently looking for a
         job in tech. This is my personal blog where I write posts about random
