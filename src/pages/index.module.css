@@ -2,6 +2,12 @@ span {
   color: rgb(91, 91, 91);
 }
 
+.reveal-email-btn {
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
 .post-link-container {
   font-size: 1.1rem;
   display: flex;
