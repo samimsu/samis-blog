@@ -25,7 +25,7 @@ const Post55 = () => {
           heard back today. I was told they still haven't filled the role, and I
           should expect to hear back soon.
         </p>
-        <p>2. Read 2 books</p>
+        <h2>2. Read 2 books</h2>
         <StaticImage
           src="../../images/no-rules-rules-cover.png"
           alt="No Rules Rules Cover"
@@ -86,7 +86,7 @@ const Post55 = () => {
           fight back and improve, and I hope to do that. This post will also
           serve as a reminder to myself to help me stay on track.
         </p>
-        <p>3. Create 1 project</p>
+        <h2>3. Create 1 project</h2>
         <p>
           I technically didn't do this because I didn't create something new.
           Instead, I continued working on{" "}
