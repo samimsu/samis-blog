@@ -13,6 +13,7 @@ const Post = ({ file, linkText, date }) => {
 
 const Posts = ({ count }) => {
   const posts = [
+    <Post key={56} file="post-56" linkText="#56" date="Nov 1, 2021" />,
     <Post
       key={55}
       file="post-55"
