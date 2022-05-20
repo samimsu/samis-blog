@@ -14,11 +14,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Sami">
       <p>
-        I am a software developer living in the UAE. I'm currently looking for a
-        job in tech. This is my personal blog where I write posts about random
-        things. I have a{" "}
-        <a href="https://samimsu.github.io">portfolio website</a> and{" "}
-        <a href="https://codingforcasuals.com">coding blog</a> too.
+        I am a software developer living in the UAE. I'm working as a Web
+        Developer Intern for Letswork. This is my personal blog where I write
+        posts about random things. You can find my portfolio website{" "}
+        <a href="https://samimsu.github.io">here</a>.
       </p>
       <p>
         You can reach out to me by email at:{" "}
