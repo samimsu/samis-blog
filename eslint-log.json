@@ -1,0 +1,385 @@
+[
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\.eslintrc.js",
+    "messages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\gatsby-config.js",
+    "messages": [
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 11,
+        "column": 16,
+        "nodeType": "TemplateLiteral",
+        "messageId": "wrongQuotes",
+        "endLine": 11,
+        "endColumn": 40,
+        "fix": { "range": [233, 257], "text": "'gatsby-plugin-manifest'" }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 25,
+        "column": 22,
+        "nodeType": "TemplateLiteral",
+        "messageId": "wrongQuotes",
+        "endLine": 25,
+        "endColumn": 39,
+        "fix": { "range": [978, 995], "text": "'use-credentials'" }
+      }
+    ],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "module.exports = {\n  siteMetadata: {\n    siteUrl: 'https://www.sami.gatsbyjs.io',\n    title: \"Sami's Blog\",\n  },\n  plugins: [\n    'gatsby-plugin-image',\n    'gatsby-plugin-sharp',\n    'gatsby-transformer-sharp',\n    {\n      resolve: `gatsby-plugin-manifest`,\n      options: {\n        name: 'GatsbyJS',\n        short_name: 'GatsbyJS',\n        start_url: '/',\n        background_color: '#6b37bf',\n        theme_color: '#6b37bf',\n        // Enables \"Add to Homescreen\" prompt and disables browser UI (including back button)\n        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display\n        display: 'standalone',\n        icon: 'src/images/icon.png', // This path is relative to the root of the site.\n        // An optional attribute which provides support for CORS check.\n        // If you do not provide a crossOrigin option, it will skip CORS for manifest.\n        // Any invalid keyword or empty string defaults to `anonymous`\n        crossOrigin: `use-credentials`,\n      },\n    },\n  ],\n};\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\scripts\\rename-files.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 1,
+        "message": "Unexpected console statement.",
+        "line": 20,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 20,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 1,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 12
+      }
+    ],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "// ran inside pages/posts to change .js files to .jsx\n\nconst fs = require('fs');\n// import { rename } from 'node:fs';\n\nconst getFiles = () => {\n  const files = fs.readdirSync('./');\n  return files;\n};\n\nconst files = getFiles();\n// console.log(files);\nlet fileNames = [];\nfiles.forEach((file) => {\n  // console.log(file);\n  const fileName = file.replace('.js', '');\n  // console.log(fileName);\n  fileNames = fileNames.concat(fileName);\n});\nconsole.log(fileNames);\nfileNames\n  // .filter((file) => file.startsWith('ad'))\n  .forEach((file) => {\n    fs.renameSync(`${file}.js`, `${file}.jsx`);\n  });\n// fs.renameSync('advice.jsx', 'advice.js');\nconsole.log('renamed');\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\src\\components\\layout.js",
+    "messages": [
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'pageTitle' is missing in props validation",
+        "line": 11,
+        "column": 19,
+        "nodeType": "Property",
+        "messageId": "missingPropType",
+        "endLine": 11,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'children' is missing in props validation",
+        "line": 11,
+        "column": 30,
+        "nodeType": "Property",
+        "messageId": "missingPropType",
+        "endLine": 11,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "react/jsx-filename-extension",
+        "severity": 2,
+        "message": "JSX not allowed in files with extension '.js'",
+        "line": 23,
+        "column": 5,
+        "nodeType": "JSXElement",
+        "messageId": "noJSXWithExtension",
+        "endLine": 50,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "react/jsx-one-expression-per-line",
+        "severity": 2,
+        "message": "` | ` must be placed on a new line",
+        "line": 25,
+        "column": 20,
+        "nodeType": "JSXText",
+        "messageId": "moveToNewLine",
+        "endLine": 25,
+        "endColumn": 23,
+        "fix": { "range": [447, 450], "text": "\n{' '}\n|" }
+      },
+      {
+        "ruleId": "react/jsx-one-expression-per-line",
+        "severity": 2,
+        "message": "`{data.site.siteMetadata.title}` must be placed on a new line",
+        "line": 25,
+        "column": 23,
+        "nodeType": "JSXExpressionContainer",
+        "messageId": "moveToNewLine",
+        "endLine": 25,
+        "endColumn": 53,
+        "fix": {
+          "range": [450, 480],
+          "text": "\n{' '}\n{data.site.siteMetadata.title}"
+        }
+      }
+    ],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "import * as React from 'react';\nimport { Link, useStaticQuery, graphql } from 'gatsby';\nimport {\n  container,\n  heading,\n  navLinks,\n  navLinkItem,\n  navLinkText,\n} from './layout.module.css';\n\nfunction Layout({ pageTitle, children }) {\n  const data = useStaticQuery(graphql`\n    query {\n      site {\n        siteMetadata {\n          title\n        }\n      }\n    }\n  `);\n\n  return (\n    <div className={container}>\n      <title>\n        {pageTitle} | {data.site.siteMetadata.title}\n      </title>\n      <nav>\n        <ul className={navLinks}>\n          <li className={navLinkItem}>\n            <Link to=\"/\" className={navLinkText}>\n              Home\n            </Link>\n          </li>\n          <li className={navLinkItem}>\n            <Link to=\"/posts\" className={navLinkText}>\n              Posts\n            </Link>\n          </li>\n          <li className={navLinkItem}>\n            <Link to=\"/tools\" className={navLinkText}>\n              Tools\n            </Link>\n          </li>\n        </ul>\n      </nav>\n      <main>\n        <h1 className={heading}>{pageTitle}</h1>\n        {children}\n      </main>\n    </div>\n  );\n}\n\nexport default Layout;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\src\\pages\\about.js",
+    "messages": [
+      {
+        "ruleId": "react/function-component-definition",
+        "severity": 2,
+        "message": "Function component is not a function declaration",
+        "line": 4,
+        "column": 19,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "function-declaration",
+        "endLine": 10,
+        "endColumn": 2,
+        "fix": {
+          "range": [76, 190],
+          "text": "function AboutPage() {\n  return (\n    <Layout pageTitle=\"About me\">\n      <p>I'm Sami</p>\n    </Layout>\n  );\n}"
+        }
+      },
+      {
+        "ruleId": "arrow-body-style",
+        "severity": 2,
+        "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
+        "line": 4,
+        "column": 25,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "unexpectedSingleBlock",
+        "endLine": 10,
+        "endColumn": 2,
+        "fix": {
+          "range": [100, 189],
+          "text": "(\n    <Layout pageTitle=\"About me\">\n      <p>I'm Sami</p>\n    </Layout>\n  )"
+        }
+      },
+      {
+        "ruleId": "react/jsx-filename-extension",
+        "severity": 2,
+        "message": "JSX not allowed in files with extension '.js'",
+        "line": 6,
+        "column": 5,
+        "nodeType": "JSXElement",
+        "messageId": "noJSXWithExtension",
+        "endLine": 8,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 7,
+        "column": 11,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts"
+      }
+    ],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "import * as React from 'react';\nimport Layout from '../components/layout';\n\nconst AboutPage = () => {\n  return (\n    <Layout pageTitle=\"About me\">\n      <p>I'm Sami</p>\n    </Layout>\n  );\n};\n\nexport default AboutPage;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\src\\pages\\posts.js",
+    "messages": [
+      {
+        "ruleId": "arrow-body-style",
+        "severity": 2,
+        "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
+        "line": 5,
+        "column": 21,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "unexpectedSingleBlock",
+        "endLine": 11,
+        "endColumn": 2,
+        "fix": {
+          "range": [137, 217],
+          "text": "(\n    <Layout pageTitle=\"Posts\">\n      <Posts />\n    </Layout>\n  )"
+        }
+      },
+      {
+        "ruleId": "react/jsx-filename-extension",
+        "severity": 2,
+        "message": "JSX not allowed in files with extension '.js'",
+        "line": 7,
+        "column": 5,
+        "nodeType": "JSXElement",
+        "messageId": "noJSXWithExtension",
+        "endLine": 9,
+        "endColumn": 14
+      }
+    ],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "import * as React from 'react';\nimport Layout from '../components/layout';\nimport Posts from '../components/posts';\n\nconst tools = () => {\n  return (\n    <Layout pageTitle=\"Posts\">\n      <Posts />\n    </Layout>\n  );\n};\n\nexport default tools;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  },
+  {
+    "filePath": "C:\\Users\\LENOVO\\Desktop\\Stuff\\Coding Projects\\samis-blog\\src\\pages\\tools.js",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`gatsby` import should occur before import of `../components/layout`",
+        "line": 3,
+        "column": 1,
+        "nodeType": "ImportDeclaration",
+        "endLine": 3,
+        "endColumn": 31,
+        "fix": {
+          "range": [32, 106],
+          "text": "import { Link } from 'gatsby';\nimport Layout from '../components/layout';\n"
+        }
+      },
+      {
+        "ruleId": "arrow-body-style",
+        "severity": 2,
+        "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
+        "line": 6,
+        "column": 21,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "unexpectedSingleBlock",
+        "endLine": 15,
+        "endColumn": 2,
+        "fix": {
+          "range": [183, 422],
+          "text": "(\n    <Layout pageTitle=\"Tools\">\n      <p>Tools and scripts that I've created</p>\n      <div className={postLinkContainer}>\n        <Link to=\"/tools/paragraphs-to-html\">Paragraphs to HTML</Link>\n      </div>\n    </Layout>\n  )"
+        }
+      },
+      {
+        "ruleId": "react/jsx-filename-extension",
+        "severity": 2,
+        "message": "JSX not allowed in files with extension '.js'",
+        "line": 8,
+        "column": 5,
+        "nodeType": "JSXElement",
+        "messageId": "noJSXWithExtension",
+        "endLine": 13,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 9,
+        "column": 34,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts"
+      }
+    ],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "import * as React from 'react';\nimport Layout from '../components/layout';\nimport { Link } from 'gatsby';\nimport { postLinkContainer } from './index.module.css';\n\nconst tools = () => {\n  return (\n    <Layout pageTitle=\"Tools\">\n      <p>Tools and scripts that I've created</p>\n      <div className={postLinkContainer}>\n        <Link to=\"/tools/paragraphs-to-html\">Paragraphs to HTML</Link>\n      </div>\n    </Layout>\n  );\n};\n\nexport default tools;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "lines-around-directive",
+        "replacedBy": ["padding-line-between-statements"]
+      },
+      { "ruleId": "no-spaced-func", "replacedBy": ["func-call-spacing"] },
+      { "ruleId": "global-require", "replacedBy": [] },
+      { "ruleId": "no-buffer-constructor", "replacedBy": [] },
+      { "ruleId": "no-new-require", "replacedBy": [] },
+      { "ruleId": "no-path-concat", "replacedBy": [] }
+    ]
+  }
+]
