@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "commit": "git add . && git commit -m $npm_config_message"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",

@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 
 const Post63 = () => {
   return (
-    <Layout pageTitle="#63">
+    <Layout pageTitle="#63 - internship">
       <h4>May 20, 2022</h4>
       <article>
         <p>
