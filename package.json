@@ -14,6 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
     "lint:output-txt": "eslint . --ext .js,.jsx --output-file eslint-log.txt",
     "lint:output-json": "eslint . --ext .js,.jsx --format json --output-file eslint-log.json",
     "push:post": "git add . && git commit -m \"Create new post\" && git push"
