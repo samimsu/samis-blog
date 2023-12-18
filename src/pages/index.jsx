@@ -13,12 +13,7 @@ function IndexPage() {
   const [showEmail, setShowEmail] = React.useState(false);
   return (
     <Layout pageTitle="Sami">
-      <p>
-        I am a software developer living in the UAE. I'm working as a Web
-        Developer Intern for Letswork. This is my personal blog where I write
-        posts about random things. You can find my portfolio website{' '}
-        <a href="https://samimsu.github.io">here</a>.
-      </p>
+      <p>I am a software developer based in the UAE.</p>
       <p>
         You can reach out to me by email at:{' '}
         <button
